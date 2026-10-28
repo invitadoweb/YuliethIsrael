@@ -14,21 +14,22 @@
 
   
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com/" />
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&amp;family=Lato:wght@300;400;700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet" />
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com/" />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&amp;family=Lato:wght@300;400;700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet" />
 
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css">
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css">
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- GSAP 3.12.5 + ScrollTrigger -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.js"></script>
@@ -42,7 +43,7 @@
       --gold:      #C9A96E;
       --gold-light:#E8D5A8;
       --gold-dark: #8B6914;
-      --text:      #2C2418;
+      --text:      #042517;
       --surface:   #EDE8DF;
       --arena:     #D4B896;
       --terracota: #C47E5A;
@@ -108,6 +109,10 @@
       object-position: center;
       z-index: 2;
       transform: scale(1.18);
+    }
+
+    .d_none{
+      display: none;
     }
 
     /* Video de apertura — oculto hasta que el usuario toca */
@@ -552,7 +557,7 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: linear-gradient(135deg, var(--text) 0%, #3d2e1a 100%);
+      background: linear-gradient(135deg, var(--text) 0%, #0E422D 100%);
       color: var(--gold-light);
       font-family: var(--sans);
       font-size: 10px;
@@ -603,7 +608,7 @@
        ITINERARY — LUXURY CARD DESIGN
     ══════════════════════════════════════════════════════ */
     #itinerario {
-      background: linear-gradient(180deg, #1a1410 0%, #2C2418 40%, #1a1410 100%);
+      background: linear-gradient(180deg, #052014 0%, #0D3C28 40%, #052014 100%);
       padding: 80px 20px;
       color: var(--crema);
     }
@@ -1070,7 +1075,7 @@
 
     /* ── FOOTER ──────────────────────────────────────── */
     footer {
-      background: linear-gradient(180deg, #1a1410, var(--text));
+      background: linear-gradient(180deg, #052014, var(--text));
       color: var(--bg);
       text-align: center;
       padding: 64px 24px 52px;
@@ -1127,7 +1132,7 @@
       z-index: 998;
       width: 54px; height: 54px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--text) 0%, #3d2e1a 100%);
+      background: linear-gradient(135deg, var(--text) 0%, #0E422D 100%);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1272,7 +1277,7 @@
     </section>
 
     <!-- ── 3. UBICACIÓN ────────────────────────────── -->
-    <section id="ubicacion" aria-label="Lugares del evento">
+    <section aria-label="Lugares del evento" id="acces">
       <p class="label fu">Nos encontramos aquí</p>
       <h2 class="title fu">Dónde celebraremos</h2>
       <p class="subtitle fu">Te esperamos con los brazos abiertos</p>
@@ -1294,21 +1299,8 @@
           </a>
         </article>
 
-        <!--<article class="loc-card fu">
-          <p class="loc-type">Recepción</p>
-          <h3 class="loc-name">Hacienda de los Morales</h3>
-          <p class="loc-addr">Vázquez de Mella 525<br>Col. Los Morales Polanco, CDMX</p>
-          <p class="loc-hour">18:30 hrs</p>
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=Hacienda+de+los+Morales,+Vazquez+de+Mella+525,+Polanco,+Ciudad+de+Mexico"
-             target="_blank" rel="noopener noreferrer"
-             class="btn-maps" aria-label="Ver Hacienda de los Morales en Google Maps">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-              <circle cx="12" cy="9" r="2.5"/>
-            </svg>
-            Ver en Google Maps
-          </a>
-        </article>-->
+       
+        
       </div>
     </section>
 
@@ -1410,40 +1402,28 @@
 </div>
 
 
+
+
+
+
+
+
     </section>
 
-    <!-- ── 6. DRESS CODE ───────────────────────────── 
-    <section id="dresscode" aria-label="Código de vestimenta">
-      <p class="label fu">Código de vestimenta</p>
-      <h2 class="title fu">Semi-formal</h2>
-      <p class="dc-note fu">Tonos tierra · La naturaleza nos inspira</p>
 
-      <div class="swatches" role="list" aria-label="Paleta de colores sugerida">
-        <div class="swatch" role="listitem">
-          <div class="sw-circle" style="background:#D4B896" aria-label="Arena #D4B896"></div>
-          <span class="sw-name">Arena</span>
-        </div>
-        <div class="swatch" role="listitem">
-          <div class="sw-circle" style="background:#C47E5A" aria-label="Terracota #C47E5A"></div>
-          <span class="sw-name">Terracota</span>
-        </div>
-        <div class="swatch" role="listitem">
-          <div class="sw-circle" style="background:#8A9E7E" aria-label="Verde salvia #8A9E7E"></div>
-          <span class="sw-name">Salvia</span>
-        </div>
-        <div class="swatch" role="listitem">
-          <div class="sw-circle" style="background:#F5EFE6;border:2px solid #D4B896" aria-label="Crema #F5EFE6"></div>
-          <span class="sw-name">Crema</span>
-        </div>
-      </div>
+<br>
+<section class="pst_relative zdex_10 d_none" id="no_acces" onclick="ShowModal()">
+    <div class="pst_relative bg_white py_50 px_20 text_center color_black">
+       <h1 class="font_bold text_center fspx_20 m_0 color_red text_uppercase">La presente invitación<br> no garantiza acceso al evento.</h1>
+    </div>
+</section>
+<br>
 
-      <p class="dc-avoid fu">Por favor evitar el blanco y el negro</p>
-    </section>-->
 
     <!-- ── 7. FAMILIA ──────────────────────────────── -->
-    <section id="familia" aria-label="Familia y padrinos">
+    <section aria-label="Familia y padrinos" style="text-align: center;" id="acces">
       <p class="label fu">Quienes nos rodean</p>
-      <h2 class="title fu">Familia &amp; Padrinos</h2>
+      <h2 class="title fu">Familia & Padrinos</h2>
       <p class="subtitle fu">Rodeados de quienes más amamos</p>
 
       <div class="fam-group fu">
@@ -1489,18 +1469,31 @@
     
 
     <!-- ── 9. COMPARTIR INVITACIÓN ───────────────── -->
-    <section id="rsvp" aria-label="Compartir invitación">
+    <section  aria-label="Compartir invitación" style="text-align: center;"  id="acces">
       <p class="label fu">Confirma la invitación</p>
       <h2 class="title fu">Confirma por WhatsApp</h2>
 
-      
-      <div>
-     
-        
+                    <br>
 
-        <a
-          id="btn-wa"
-          href="#"
+                    <h1 class=" title fu " id="txt_famlia">. . .</h1>
+
+                    <br>
+
+                 
+                    <p class=" fam-name ">
+                        Tu asistencia es muy importante para nosotros. Confirmar en el siguiente enlace
+                    </p>
+
+                    
+                    <br>
+                    <h1 class=" label fu ">
+                        pase para
+                    <span class="fam-name" id="txt_personas">. . .</span></h1>
+                    <br>
+
+      <div>
+        <a id="btn-wa"
+          href="https://api.whatsapp.com/send?phone=XXXXXXXXXXXX&text=Hola,%20confirmo%20mi%20asistencia%20a%20tu%20evento" 
           target="_blank" rel="noopener noreferrer"
           class="btn-wa fu"
           aria-label="Enviar invitación por WhatsApp">
@@ -1527,12 +1520,51 @@
     <br>
     <br>
 
-    <iframe src="https://ztart.mx/incrust/light.html" width="100%" height="auto" frameborder="0"></iframe>
+    <iframe src="https://servemza.github.io/incrust/light.html" width="100%" height="auto" frameborder="0"></iframe>
 
 
   </footer>
 
   
+
+
+
+
+
+
+
+
+
+
+<!-- MINIDASH -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <form class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label">Ingresa key</label>
+                    <input type="password" class="form-control" name="key" placeholder="##########">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" onclick="Login()">Ingresar</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
 
 
   <script>
@@ -1973,9 +2005,6 @@
 
 
 
-const API_URL = 'https://www.ztart.mx/';
-const API = "https://www.ztart.mx/";
-const CLIENTE_ID = "52";
 
 
 
@@ -1985,6 +2014,261 @@ const CLIENTE_ID = "52";
 
 
 
+const REGISTRY = "https://raw.githubusercontent.com/servemza/tunnel/main/tunnels.json";
+let API_URL, API;
+const CLIENTE_ID = "56";
+function getTunnels() {
+  return fetch(`${REGISTRY}?t=${Date.now()}`, { cache: "no-store" })
+    .then(res => {
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return res.json();
+    });
+}
+getTunnels()
+.then(data => {
+
+
+API_URL = API = data["8080"]?.url;
+  
+
+
+
+class UrlParams {  constructor() { this.params = new URLSearchParams(window.location.search); }  get(key) { return this.params.get(key); } }
+const url = new UrlParams();
+var invitado = url.get('invitado');
+if(invitado!=null){
+    var link = `${API}/pase_show?cliente_id=${CLIENTE_ID}&familia=${invitado}&r=${Math.random()}`;
+    function procesarRespuesta(data) {
+        var data = JSON.parse(data);
+        if (data.message == false) {
+            window.location.href = "./";
+        } else {
+            $("*#txt_famlia").html(toTitleCase(data.message.familia));
+            var n = data.message.num_invitados;
+            var str = "";
+            if (n > 1) {
+                str = str + n + " personas";
+            } else {
+                str = str + n + " persona";
+            }
+            $("*#txt_personas").html(str);
+            console.log(data.message);
+        }
+    }
+    fetch(link)
+    .then(response => response.text())
+    .then(data => procesarRespuesta(data))
+    .catch(error => {
+        console.error('Error en la petición:', error);
+        window.location.href = "./";
+    });
+  
+}else{
+
+    $("*#acces").addClass("d_none");
+    $("*#no_acces").removeClass("d_none");
+}}).catch(err => console.error("Error cargando tunnels:", err));
+
+
+
+
+
+function ShowModal(){
+     $('#exampleModal').modal('show');
+}
+async function Login(){
+    var formData = $('#exampleModal form');
+    var serialize = formData.serialize();
+    var dataObj = formData.serializeArray();
+    var url = `${API}/pase_login?cliente_id=${CLIENTE_ID}&clave=${dataObj[0].value}`;
+    
+    function procesarRespuesta(data) {
+        if (data == 'error') {
+            Toastify({
+                text: "Error en la clave",
+                duration: 1000,
+                backgroundColor: "#F44336"
+            }).showToast();
+        }
+        
+        if (data == 'exito') {
+            var all = `${API}/pase_all?cliente_id=${CLIENTE_ID}&r=${Math.random()}`;
+            
+            function procesarRespuestaAll(data) {
+                $("#exampleModal").html(data);
+            }
+            
+            fetch(all)
+                .then(response => response.text())
+                .then(data => {
+                    procesarRespuestaAll(data);
+                    console.log('Respuesta procesada exitosamente');
+                })
+                .catch(error => {
+                    console.error('Error al cargar los datos:', error);
+                });
+        }
+    }
+    fetch(url)
+        .then(response => response.text())
+        .then(data => procesarRespuesta(data))
+        .catch(error => {
+            console.error('Error en la petición de login:', error);
+            Toastify({
+                text: "Error de conexión",
+                duration: 1000,
+                backgroundColor: "#F44336"
+            }).showToast();
+        });
+}
+function addinvitado(){
+
+    console.log('familia el:', document.getElementById('familia'));
+    console.log('personas el:', document.getElementById('personas'));
+    console.log('API:', API);
+
+
+
+    const familia = document.getElementById('familia').value.trim().toLowerCase();
+    const personas = document.getElementById('personas').value.trim();
+    if (familia === '') {
+        Toastify({
+            text: "La familia no puede ser vacio",
+            duration: 1000,
+            backgroundColor: "#F44336"
+        }).showToast();
+        return false;
+    }
+    if (personas === '') {
+        Toastify({
+            text: "El número de personas no puede ser vacio",
+            duration: 1000,
+            backgroundColor: "#F44336"
+        }).showToast();
+        return false;
+    }
+    if (isNaN(personas) || personas <= 0) {
+        Toastify({
+            text: "El número de personas debe ser un número válido mayor a 0",
+            duration: 1000,
+            backgroundColor: "#F44336"
+        }).showToast();
+        return false;
+    }
+    const tabla = document.querySelector('table');
+    const tbody = tabla.querySelector('tbody');
+    let textoEncontrado = false;
+    if (tbody.textContent.includes('Agrega invitados en la parte de abajo')) {
+        textoEncontrado = true;
+    }
+    if (textoEncontrado) {
+        tbody.innerHTML = ''; // Limpiar
+    }
+    let FEncontrado = false;
+    if (tbody.textContent.includes(familia)) {
+        FEncontrado = true;
+    }
+    if (FEncontrado) {
+        Toastify({
+            text: "La familia ya esta agregada",
+            duration: 1000,
+            backgroundColor: "#F44336"
+        }).showToast();
+        return false;
+    }
+    tbody.innerHTML += `
+        <tr data-familia="${familia}">
+            <td>${familia}</td>
+            <td>${personas}</td>
+            <td class="text_center">
+                <button type="button" class="btn btn-primary p_5" onclick="compartirWat('${familia}')"><span class="material-icons">reply</span></button>
+                <button type="button" class="btn btn-danger p_5" onclick="deleteFam('${familia}')"><span class="material-icons">delete</span></button>
+            </td>
+        </tr>
+    `;
+    Toastify({
+        text: "Agregando ",
+        duration: 1000,
+        backgroundColor: "#4CAF50"
+    }).showToast();
+    document.getElementById('familia').value = '';
+    document.getElementById('personas').value = '';
+    var url = `${API}/pase_update?cliente_id=${CLIENTE_ID}&tipo=1&familia=${familia}&personas=${personas}&r=${Math.random()}`;
+    function procesarRespuesta(data) {
+        console.log('Invitado agregado exitosamente');
+    }
+    fetch(url)
+        .then(response => response.text())
+        .then(data => procesarRespuesta(data))
+        .catch(error => {
+            console.error('Error al agregar invitado:', error);
+            Toastify({
+                text: "Error al guardar en el servidor",
+                duration: 1000,
+                backgroundColor: "#F44336"
+            }).showToast();
+        });
+}
+function deleteFam(familia){
+    document.querySelector('[data-familia="'+familia+'"]').remove();
+    const tabla = document.querySelector('table');
+    const tbody = tabla.querySelector('tbody');
+    const totalTr = tbody.querySelectorAll('tr').length
+    if(totalTr < 1){
+        tbody.innerHTML += `
+            <tr>
+                <td class="text_center" colspan="3">Agrega invitados en la parte de abajo</td>
+            </tr>
+        `;
+    }
+    Toastify({
+        text: "Borrado ",
+        duration: 1000,
+        backgroundColor: "#4CAF50"
+    }).showToast();
+
+    var url = `${API}/pase_update?cliente_id=${CLIENTE_ID}&tipo=0&familia=${familia}&r=${Math.random()}`;
+    
+    function procesarRespuesta(data) {
+        console.log('Invitado borrado exitosamente');
+    }
+    
+    fetch(url)
+        .then(response => response.text())
+        .then(data => procesarRespuesta(data))
+        .catch(error => {
+            console.error('Error al borrar invitado:', error);
+            Toastify({
+                text: "Error al eliminar del servidor",
+                duration: 1000,
+                backgroundColor: "#F44336"
+            }).showToast();
+        });
+}
+function compartirWat(familia){
+    const boton = document.createElement('button');
+    boton.id = 'miBoton';
+    boton.className = 'd_none';
+    boton.textContent = 'Compartir WhatsApp';
+    document.body.appendChild(boton);
+    
+    // Codificar la familia para evitar problemas con espacios
+    const familiaCodeada = encodeURIComponent(familia);
+    const mensaje = "https://invitadoweb.github.io/YuliethIsrael/?invitado=" + familiaCodeada;
+    const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(mensaje)}`;
+    
+    boton.addEventListener('click', function() {
+        window.open(whatsappUrl, '_blank');
+        boton.remove();
+    });
+    boton.click();
+}
+function toTitleCase(str) {
+    return str
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ');
+}
 
 
 
